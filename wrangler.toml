@@ -3,14 +3,12 @@ compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
 main = ".open-next/worker.js"
 minify = true
+keep_vars = true
 
-
-# Cloudflare Workers Assets 用于服务静态文件
 [assets]
 directory = ".open-next/assets"
 binding = "ASSETS"
 
-# D1 数据库绑定
 [[d1_databases]]
 binding = "DB"
 database_name = "moontvpuls"
@@ -19,6 +17,5 @@ database_id = "38722777-ac3b-4e8a-b43c-9215cb9ef438"
 [vars]
 NODE_ENV = "production"
 BUILD_TARGET = "cloudflare"
-PASSWORD = "pcbean123"
+NEXT_PUBLIC_STORAGE_TYPE = "d1"
 USERNAME = "pcbean"
-
