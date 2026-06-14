@@ -19,4 +19,6 @@ database_id = "38722777-ac3b-4e8a-b43c-9215cb9ef438"
 [vars]
 NODE_ENV = "production"
 BUILD_TARGET = "cloudflare"
+PASSWORD = "pcbean123"
+USERNAME = "pcbean"
 
